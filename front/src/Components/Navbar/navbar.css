@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 6px;
+    justify-content: space-around;
+}
+.navbar>a{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.navbar>a:hover{
+    color: orangered;
+}
+.actions{
+    display: none;
+    
+    position: absolute;
+    top: 3.30rem;
+    margin-left: -1em;
+    border: 1px solid lightgrey;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-weight: 530;
+}
+.profileDiv{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.profileDiv:hover> .actions{
+    display: block; 
+}
+.actions:hover{
+    display: block;
+}
+
+.actions>div>div{
+    padding: 6px 16px;
+    border-bottom: 1px solid lightgrey;
+}
+.actions>div>div:last-child{
+    border-bottom: none;
+}
+.actions>div>div:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
