@@ -6,6 +6,7 @@ import "./navbar.css";
 let logged=[
     {to:"/accept",title:"Accept"},
     {to:"/pending",title:"Pending"},
+    {to:"/events",title:"My Events"},
 ]
 
 let unlogged=[

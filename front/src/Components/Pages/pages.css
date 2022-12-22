@@ -1,0 +1,11 @@
+
+.loginSpinner{
+    position: absolute;
+    top:200px;
+    left: 46%;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    background-color: coral;
+    padding: 10px;
+    
+}

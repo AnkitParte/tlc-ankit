@@ -1,0 +1,9 @@
+
+.searchBox{
+    position: sticky;
+    top: 7rem;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    width: 50%;
+    margin: auto;
+}
