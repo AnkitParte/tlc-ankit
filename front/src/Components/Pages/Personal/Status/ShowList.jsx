@@ -33,7 +33,7 @@ export default function ShowList(props){
         <Box>Organizer : {current?.organizer?.username} - Category : {current?.category || "others"}</Box>
         <Button size="sm" onClick={()=>setOthers(!others)}>{others?"Hide":"See"} Others</Button>
         {others && 
-            <Box display={"flex"} flexWrap="wrap">
+            <Box display={"flex"} flexWrap="wrap" gap="10px">
                 {current?.applications?.map((el,i)=>{
                     let {applicant,status} = el;
                     if(status){
