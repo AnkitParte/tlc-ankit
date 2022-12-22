@@ -9,7 +9,7 @@ import axios from "axios";
 export default function SoloEvent() {
     const nav = useNavigate();
     const params = useParams();
-    const {token} = useSelector(store=>store.user);
+    const {token,isAuth} = useSelector(store=>store.user);
     const toast = useToast();
     const [load,setLoad] = useState(false);
 
@@ -90,7 +90,12 @@ export default function SoloEvent() {
                 <Text><Text as="span" fontWeight={700}>Expire date</Text> : {date}</Text>
             </CardBody>
             <CardFooter>
+                {isAuth?
                 <Button colorScheme='green' disabled={currDate>date} onClick={applyEvent}>Request to join</Button>
+                    :
+                <Button>Do login to Join</Button>
+                }
+                
                 <Button ml="5px" colorScheme={"blue"} onClick={()=>nav("/")}>Go Back</Button>
             </CardFooter>
         </Card>
