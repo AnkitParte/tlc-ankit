@@ -86,7 +86,7 @@ export default function SoloEvent() {
                 <Text><Text as="span" fontWeight={700}>Expire date</Text> : {date}</Text>
             </CardBody>
             <CardFooter>
-                <Button colorScheme='green' disabled={currDate>date} onClick={applyEvent}>Apply</Button>
+                <Button colorScheme='green' disabled={currDate>date} onClick={applyEvent}>Request to join</Button>
                 <Button ml="5px" colorScheme={"blue"} onClick={()=>nav("/")}>Go Back</Button>
             </CardFooter>
         </Card>
