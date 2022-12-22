@@ -36,7 +36,7 @@ export default function MyRequests(){
     
     return(<Box w="80%" m="auto">
         <Heading>Your Requests</Heading>
-        {reqLoader && <Spinner thickness="6px" alignSelf={"center"}/>}
+        {reqLoader && <Spinner thickness="3px" size="md" alignSelf={"center"}/>}
         <Box w="100%" mt="10px" mb="10px">
             <Button w="45%" mr="5px" colorScheme={"facebook"} variant={page?"solid":"outline"}
             onClick={()=>setPage(!page)}>Accepted</Button>

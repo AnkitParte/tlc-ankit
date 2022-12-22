@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Spinner } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -11,8 +11,10 @@ export default function MyEvents(){
     const {token} = useSelector(store=>store.user);
     const [myEve,setMyEve] = useState([]);
     const nav = useNavigate();
+    const [load,setLoad] = useState(false);
     //console.log(token)
     const getMyEve = async()=>{
+        setLoad(true);
         await axios.get(myEveURL,{
             headers:{
                 token:token
@@ -20,10 +22,12 @@ export default function MyEvents(){
         })
         .then((res)=>{
             //console.log(res);
+            setLoad(false);
             setMyEve(res.data.data);
         })
         .catch((e)=>{
             //console.log(e);
+            setLoad(false);
         })
         
     }
@@ -33,6 +37,7 @@ export default function MyEvents(){
     return(<Box>
         <Heading>Your Events</Heading>
         <Box>Click on any event and then Accept/Reject applications</Box>
+        {load && <Spinner thickness="4px" size="md"/>}
         <Box>
             {myEve?.map((el)=>{
                 let date = new Date(el.expiryAt).toDateString();
