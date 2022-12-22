@@ -1,4 +1,4 @@
-import { Button, Box, useToast } from "@chakra-ui/react";
+import { Button, Box, useToast, Spinner } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import {useNavigate, useParams} from "react-router-dom";
 import { applyURL, eventURL } from "../../Store/user/user.controller";
@@ -11,6 +11,7 @@ export default function SoloEvent() {
     const params = useParams();
     const {token} = useSelector(store=>store.user);
     const toast = useToast();
+    const [load,setLoad] = useState(false);
 
     const [card,setCard] = useState({});
     let date = new Date(card.expiryAt).toDateString();
@@ -30,6 +31,7 @@ export default function SoloEvent() {
             })
             return;
         }
+        setLoad(true);
         await axios.patch(applyURL,{token,eventId:params.id})
         .then((res)=>{
             toast({
@@ -40,13 +42,14 @@ export default function SoloEvent() {
                 isClosable: true,
                 position: "top"
             })
+            setLoad(false);
         })
         .catch((e)=>{
             //console.log(e)
             if(e.response.status==502){
                 toast({
                     title: 'Already Applied',
-                    description: "Already exit",
+                    description: "Already exist",
                     status: 'info',
                     duration: 5000,
                     isClosable: true,
@@ -62,7 +65,7 @@ export default function SoloEvent() {
                     position: "top"
                 })
             }
-            
+            setLoad(false);
         })
     }
     useEffect(()=>{
@@ -74,6 +77,7 @@ export default function SoloEvent() {
     },[]);
     return (<Box w="50%" m="auto">
         <Box  w="30%" m="auto" mt="10px" mb="10px"><Button colorScheme={"blue"} onClick={()=>nav("/")} w="100%">Go Back</Button></Box>
+        {load && <Spinner thickness="3px" size="md"/>}
         <Card align='center' color={"black"} background="lightblue">
             <CardHeader>
                 <Heading size='md'>{card?.title}</Heading>

@@ -23,6 +23,13 @@ export default function CanList() {
             status=false;
             reject=true;
         }
+        toast({
+            title: 'Processing request...',
+            status: 'info',
+            duration: 500,
+            isClosable: true,
+            position: "top"
+        })
         await axios.patch(patchApply+"/"+id,{status,reject})
         .then((res)=>{
             //console.log(res);
