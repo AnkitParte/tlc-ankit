@@ -41,7 +41,7 @@ export default function CanList() {
         toast({
             title: 'Request Sent',
             description:"A request can only be done once",
-            status: 'success',
+            status: 'info',
             duration: 2500,
             isClosable: true,
             position: "top"
