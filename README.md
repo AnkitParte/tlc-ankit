@@ -14,11 +14,10 @@ event or if he wants to create and event and do some other actions</p>
 
 <h2>Post Login Accessibility</h2>
 <h4>Homepage post login</h4>
-<img src=""/>
-<p>After logging in, In navbar a user can see multiple page who he does have access to</p>
 <img src="https://user-images.githubusercontent.com/95030824/209111060-0fed7936-4375-491f-b743-8594d17f0fda.png" alt="post login landing page"/>
-<p>Single Event after click on view here button then after that a user can easily request to join the event</p>
+<p>After logging in, In navbar a user can see multiple page who he does have access to</p>
 <img src="https://user-images.githubusercontent.com/95030824/209110995-e85dfb91-a900-44d4-9c4f-d4572435230c.png" alt="solo page"/>
+<p>Single Event after click on view here button then after that a user can easily request to join the event</p>
 
 <h2>My Events Page</h2>
 <img/>
