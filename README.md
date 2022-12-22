@@ -1,5 +1,6 @@
 # An Sports Event Creator App.
-<h4>JWT Authenticaton used</h4>
+<h4>jsonwebtoken Authenticaton used</h4>
+<p>as soon a user login he will be logged in till next 1 hour after that he will have to do re-login(1 hour expiry of json web token)</p>
 <h4>Let me take you through the whole working of this webApp</h5>
 
 <h5>Landing Page</h5>
