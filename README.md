@@ -17,8 +17,21 @@ event or if he wants to create and event and do some other actions</p>
 <img src="https://user-images.githubusercontent.com/95030824/209111060-0fed7936-4375-491f-b743-8594d17f0fda.png" alt="post login landing page"/>
 <p>After logging in, In navbar a user can see multiple page who he does have access to</p>
 <img src="https://user-images.githubusercontent.com/95030824/209110995-e85dfb91-a900-44d4-9c4f-d4572435230c.png" alt="solo page"/>
-<p>Single Event after click on view here button then after that a user can easily request to join the event</p>
+<p>Single Event Page after click on view here button then after that a user can easily request to join the event</p>
 
 <h2>My Events Page</h2>
-<img/>
-
+<img src="https://user-images.githubusercontent.com/95030824/209121633-562f601e-42bc-47c5-aa34-a91acbb8352a.png" alt="event page"/>
+<p>In My Events page, a user can see all his created events so far and after click on it. You can see all the requests regarding particular events and 
+and here you can accept and reject applications of all candidates.</p>
+<img src="https://user-images.githubusercontent.com/95030824/209122003-94a1c85c-7248-4fdc-b947-10af175aaf4e.png" alt="solo event details"/>
+<h2>My Requests Page</h2>
+<h3>Accepted Section</h3>
+<p>In accepted section, a user will going to see all his accepted requests so far and other accepted candidates</p>
+<img src="https://user-images.githubusercontent.com/95030824/209122652-eb862105-a7e5-4ab3-b96f-95c9ac64d853.png" alt="my request page"/>
+<h3>Requested Section</h3>
+<p>In Requested section, a user will going to see all his pending and canceled request so far.</p>
+<img src="https://user-images.githubusercontent.com/95030824/209123418-6238f56d-fb26-490e-a82f-7f1d54fe1672.png" alt=""/>
+<h2>Post Events page</h2>
+<p>In this page a user will have to fill a form regarding the event which he wanted to create.</p>
+<img src="https://user-images.githubusercontent.com/95030824/209124019-adb5afb4-9d55-4e16-82ca-00dcaf76abd4.png" alt="create event"/>
+<h2>This is how the flow of whole app will going to be done. please reach to me regarding any kind of issue.</h2>
